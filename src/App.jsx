@@ -1,10 +1,17 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
 
 function App() {
   return (
-    <>
-      <div className="text-2xl text-blue-500 p-4">Tailwind chạy OK!</div>{" "}
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
