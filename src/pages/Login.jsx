@@ -43,7 +43,9 @@ function Login() {
           className="w-full h-full object-contain"
         />
         <div className="absolute top-8 left-1/2 -translate-x-1/2">
-          <img src={logo} alt="logo" />
+          <button className="cursor-pointer" onClick={() => navigate("/")}>
+            <img src={logo} alt="logo" />
+          </button>{" "}
         </div>
       </div>
       <div className="w-1/2 flex items-start justify-end bg-white">
